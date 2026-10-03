@@ -34,14 +34,14 @@ while True:
             print("faghat 1 ya 2 bezan")
             continue
 
-    # reset kardan ba'd az har bazi
+
     shadi_pet[0] = energy_pet[0] = gorosnegy[0] = 10
     nobat = 0
 
     while True:
         nobat += 1
 
-        # ba ehtemal 40 darsad pet chizi mikhad
+    
         khast = None
         if random.random() < 0.4:
             khast, matn = random.choice(khastehha)
@@ -87,7 +87,7 @@ while True:
             shadi_pet[0] += 1
             print(f"{esm}: mersiii, hamin ro mikhastam! <3 (shadi +1)")
 
-        # ruydad-e tasadofi (20 darsad)
+    
         if random.random() < 0.2:
             e = random.choice(["ghaza", "shad", "khaste"])
             if e == "ghaza":
@@ -100,14 +100,14 @@ while True:
                 energy_pet[0] -= 1
                 print(f"{esm} yeho khaste shod... (energy -1)")
 
-        # mahdood kardan-e adad-ha beyn 0 ta 10
+    
         shadi_pet[0] = max(KAF, min(shadi_pet[0], SAGHF))
         energy_pet[0] = max(KAF, min(energy_pet[0], SAGHF))
         gorosnegy[0] = max(KAF, min(gorosnegy[0], SAGHF))
 
         print(f"{esm} -> shadi: {shadi_pet[0]} | energy: {energy_pet[0]} | sir: {gorosnegy[0]}")
 
-        # sharte marg
+       
         if shadi_pet[0] <= 0 or energy_pet[0] <= 0:
             if shadi_pet[0] <= 0:
                 print(f"{esm} az bi-hoselegi morad... :(")
