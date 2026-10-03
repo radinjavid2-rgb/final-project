@@ -128,149 +128,86 @@ while True:
 
 #_______final_project____1____#
 
-factor_foroshgah = []
+sabad = []
 
 while True:
-    menu = input("1 mive foroshi   2 exit   :")
+    menu = input("1 mive foroshi   2 exit va factor   :")
     match menu:
         case "1":
-            mive_ha = input("1 moz  2 sib  3 porteghal   4 narengi     5.ananas      6.hendone        7.hollo       8.karboze    9.exit : ")
+            mive_ha = input("1 moz  2 sib  3 porteghal   4 narengi     5.ananas      6.hendone        7.hollo       8.karboze    9.bargasht : ")
             match mive_ha:
                 case "1":
                     num_moz = int(input("num of order: "))
                     price_moz = num_moz * 50
                     price_moz_tax = price_moz * 1.1
-                    print("gheymat", price_moz_tax)
-
-                    if price_moz_tax >= 500:
-                        takhfif = price_moz_tax * 0.05
-                        print("takhfif shoma", takhfif)
-                        takhfif_bad_az_hesab = price_moz_tax - takhfif
-                        factor_foroshgah.append(takhfif_bad_az_hesab)
-                        print(factor_foroshgah)
-                        break
-                    else:
-                        factor_foroshgah.append(price_moz_tax)
-                        continue
+                    sabad.append(("moz", num_moz, 50, price_moz_tax))
+                    print("moz be sabad ezafe shod")
 
                 case "2":
                     num_sib = int(input("num of order: "))
                     price_sib = num_sib * 40
                     price_sib_tax = price_sib * 1.1
-                    print("gheymat", price_sib_tax)
-
-                    if price_sib_tax >= 500:
-                        takhfif = price_sib_tax * 0.05
-                        print("takhfif shoma", takhfif)
-                        takhfif_bad_az_hesab = price_sib_tax - takhfif
-                        factor_foroshgah.append(takhfif_bad_az_hesab)
-                        print(factor_foroshgah)
-                        break
-                    else:
-                        factor_foroshgah.append(price_sib_tax)
-                        continue
+                    sabad.append(("sib", num_sib, 40, price_sib_tax))
+                    print("sib be sabad ezafe shod")
 
                 case "3":
                     num_porteghal = int(input("num of order: "))
                     price_porteghal = num_porteghal * 40
                     price_porteghal_tax = price_porteghal * 1.1
-                    print("gheymat", price_porteghal_tax)
-
-                    if price_porteghal_tax >= 500:
-                        takhfif = price_porteghal_tax * 0.05
-                        print("takhfif shoma", takhfif)
-                        takhfif_bad_az_hesab = price_porteghal_tax - takhfif
-                        factor_foroshgah.append(takhfif_bad_az_hesab)
-                        print(factor_foroshgah)
-                        break
-                    else:
-                        factor_foroshgah.append(price_porteghal_tax)
-                        continue
+                    sabad.append(("porteghal", num_porteghal, 40, price_porteghal_tax))
+                    print("porteghal be sabad ezafe shod")
 
                 case "4":
                     num_narengi = int(input("num of order: "))
                     price_narengi = num_narengi * 45
                     price_narengi_tax = price_narengi * 1.1
-                    print("gheymat", price_narengi_tax)
-
-                    if price_narengi_tax >= 500:
-                        takhfif = price_narengi_tax * 0.05
-                        print("takhfif shoma", takhfif)
-                        takhfif_bad_az_hesab = price_narengi_tax - takhfif
-                        factor_foroshgah.append(takhfif_bad_az_hesab)
-                        print(factor_foroshgah)
-                        break
-                    else:
-                        factor_foroshgah.append(price_narengi_tax)
-                        continue
+                    sabad.append(("narengi", num_narengi, 45, price_narengi_tax))
+                    print("narengi be sabad ezafe shod")
 
                 case "5":
                     num_ananas = int(input("num of order: "))
                     price_ananas = num_ananas * 230
                     price_ananas_tax = price_ananas * 1.1
-                    print("gheymat", price_ananas_tax)
-
-                    if price_ananas_tax >= 500:
-                        takhfif = price_ananas_tax * 0.05
-                        print("takhfif shoma", takhfif)
-                        takhfif_bad_az_hesab = price_ananas_tax - takhfif
-                        factor_foroshgah.append(takhfif_bad_az_hesab)
-                        print(factor_foroshgah)
-                        break
-                    else:
-                        factor_foroshgah.append(price_ananas_tax)
-                        continue
+                    sabad.append(("ananas", num_ananas, 230, price_ananas_tax))
+                    print("ananas be sabad ezafe shod")
 
                 case "6":
                     num_hendone = int(input("num of order: "))
                     price_hendone = num_hendone * 100
                     price_hendone_tax = price_hendone * 1.1
-                    print("gheymat", price_hendone_tax)
-
-                    if price_hendone_tax >= 500:
-                        takhfif = price_hendone_tax * 0.05
-                        print("takhfif shoma", takhfif)
-                        takhfif_bad_az_hesab = price_hendone_tax - takhfif
-                        factor_foroshgah.append(takhfif_bad_az_hesab)
-                        print(factor_foroshgah)
-                        break
-                    else:
-                        factor_foroshgah.append(price_hendone_tax)
-                        continue
+                    sabad.append(("hendone", num_hendone, 100, price_hendone_tax))
+                    print("hendone be sabad ezafe shod")
 
                 case "7":
                     num_hollo = int(input("num of order: "))
                     price_hollo = num_hollo * 70
                     price_hollo_tax = price_hollo * 1.1
-                    print("gheymat", price_hollo_tax)
-
-                    if price_hollo_tax >= 500:
-                        takhfif = price_hollo_tax * 0.05
-                        print("takhfif shoma", takhfif)
-                        takhfif_bad_az_hesab = price_hollo_tax - takhfif
-                        factor_foroshgah.append(takhfif_bad_az_hesab)
-                        print(factor_foroshgah)
-                        break
-                    else:
-                        factor_foroshgah.append(price_hollo_tax)
-                        continue
+                    sabad.append(("hollo", num_hollo, 70, price_hollo_tax))
+                    print("hollo be sabad ezafe shod")
 
                 case "8":
                     num_karboze = int(input("num of order: "))
                     price_karboze = num_karboze * 100
                     price_karboze_tax = price_karboze * 1.1
-                    print("gheymat", price_karboze_tax)
-
-                    if price_karboze_tax >= 500:
-                        takhfif = price_karboze_tax * 0.05
-                        print("takhfif shoma", takhfif)
-                        takhfif_bad_az_hesab = price_karboze_tax - takhfif
-                        factor_foroshgah.append(takhfif_bad_az_hesab)
-                        print(factor_foroshgah)
-                        break
-                    else:
-                        factor_foroshgah.append(price_karboze_tax)
-                        continue
+                    sabad.append(("karboze", num_karboze, 100, price_karboze_tax))
+                    print("karboze be sabad ezafe shod")
 
                 case "9":
                     continue
+
+        case "2":
+            print("------ factor ------")
+            jam_kol = 0
+            for esm, tedad, gheymat_vahed, gheymat_kol in sabad:
+                print(esm, "| tedad:", tedad, "| gheymat-e vahed:", gheymat_vahed, "| gheymat ba maliat:", gheymat_kol)
+                jam_kol += gheymat_kol
+
+            print("jam-e kol:", jam_kol)
+
+            if jam_kol > 500:
+                takhfif = jam_kol * 0.05
+                print("takhfif shoma", takhfif)
+                print("mablagh-e nahayi:", jam_kol - takhfif)
+            else:
+                print("mablagh-e nahayi:", jam_kol)
+            break
